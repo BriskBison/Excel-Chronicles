@@ -10,6 +10,9 @@ I have described each example with a header to make it easier for you to navigat
 4. VLookup / HLookup / Xlookup
 6. Financial functions and others
 
+
+You can click headers below to go directly to the specific chapters:
+
 - [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1.Data-cleaning-Grouping-Find-and-replace-Hiding-personal-data-absolute-reference-converting-text-to-numbers)
 - [2. Cell formatting + Sorting + Filtering ](#2.-Cell-formatting-Sorting-Filtering)
 - [3. Charts, financial and mathematics functions](#3.Charts-financial-and-mathematics-functions)
@@ -17,7 +20,7 @@ I have described each example with a header to make it easier for you to navigat
 The remaining files in this repository are specific records of the Excel file, for each topic, starting with the raw file, which is the file before any changes.
 
 
-# **1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers** 
+## **1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers** 
 
 1. Duplicates
 First select everything CTRL + A and remove duplicates
@@ -73,7 +76,7 @@ Then the concatenation icon, i.e. "&", and then REPT from "repeat" so that the r
 ![2 1](https://github.com/user-attachments/assets/87042fa1-a21e-4fba-9c6c-d9d600edac93)
 
 
-# **2. Cell formatting + Sorting + Filtering** 
+## **2. Cell formatting + Sorting + Filtering** 
 
 1. Formatting opinions
 - First of all, we can refer to opinions, so I suggest formatting the cells so that they have colors assigned to positive, negative and neutral opinions. To do this, select the cell with opinions, and after selecting cell formatting, select the appropriate colors assigned to the opinions.
@@ -121,7 +124,7 @@ Adding colors and mini charts is very helpful, thanks to this we can already dra
 ![2 2 0](https://github.com/user-attachments/assets/5f0e6247-37b5-4ec3-be93-b4d17fe9f013)
 
 
-# **3. Charts, financial and mathematics functions**
+## **3. Charts, financial and mathematics functions**
 
 
 
