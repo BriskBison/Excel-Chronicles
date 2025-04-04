@@ -1,8 +1,8 @@
 Hello :)
 
-In this file I would like to present my knowledge of Excel in practical activities along with descriptions of what I do specifically. I operate on a database found on the Internet, concerning the sale of bicycles.
+In this file, I would like to present my knowledge of Excel in practical activities along with descriptions of what I do specifically. I operate on a database found on the Internet, concerning the sale of bicycles.
 
-I have described each example with a header to make it easier for you to navigate, below is the table of contents
+I have described each example with a header to make it easier for you to navigate.
 
 1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers (SUBSTITUTE, LEFT, REPT, LEN)
 2. Cell formatting + Sorting + Filtering 
@@ -10,9 +10,9 @@ I have described each example with a header to make it easier for you to navigat
 4. VLookup / HLookup / Xlookup
 6. Financial functions and others
 
-- [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers)
-- [2. Cell formatting + Sorting + Filtering ](#2. Cell formatting + Sorting + Filtering )
-- [3. Charts, financial and mathematics functions](#3. Charts, financial and mathematics functions)
+- [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1.Data-cleaning-Grouping-Find-and-replace-Hiding-personal-data-absolute-reference-converting-text-to-numbers)
+- [2. Cell formatting + Sorting + Filtering ](#2.-Cell-formatting-Sorting-Filtering)
+- [3. Charts, financial and mathematics functions](#3.Charts-financial-and-mathematics-functions)
 
 The remaining files in this repository are specific records of the Excel file, for each topic, starting with the raw file, which is the file before any changes.
 
