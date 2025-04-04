@@ -11,11 +11,11 @@ I have described each example with a header to make it easier for you to navigat
 6. Financial functions and others
 
 
-You can click headers below to go directly to the specific chapters:
+You can click the headers below to go directly to the specific chapters:
 
-- [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1.Data-cleaning-Grouping-Find-and-replace-Hiding-personal-data-absolute-reference-converting-text-to-numbers)
-- [2. Cell formatting](#2.-Cell-formatting)
-- [3. Charts, financial and mathematics functions](#3.Charts-financial-and-mathematics-functions)
+- [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1-data-cleaning--grouping--find-and-replace--hiding-personal-data--absolute-reference--converting-text-to-numbers)
+- [2. Cell formatting + Sorting + Filtering](#2-cell-formatting--sorting--filtering)
+- [3. Charts, financial and mathematics functions](#3-charts-financial-and-mathematics-functions)
 
 The remaining files in this repository are specific records of the Excel file, for each topic, starting with the raw file, which is the file before any changes.
 
@@ -76,7 +76,7 @@ Then the concatenation icon, i.e. "&", and then REPT from "repeat" so that the r
 ![2 1](https://github.com/user-attachments/assets/87042fa1-a21e-4fba-9c6c-d9d600edac93)
 
 
-## **2. Cell formatting** 
+## **2. Cell formatting + Sorting + Filtering** 
 
 1. Formatting opinions
 - First of all, we can refer to opinions, so I suggest formatting the cells so that they have colors assigned to positive, negative and neutral opinions. To do this, select the cell with opinions, and after selecting cell formatting, select the appropriate colors assigned to the opinions.
