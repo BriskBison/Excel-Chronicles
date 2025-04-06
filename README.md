@@ -6,13 +6,15 @@ I have described each example with a header to make it easier for you to navigat
 
 1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers (SUBSTITUTE, LEFT, REPT, LEN)
 2. Cell formatting + Sorting + Filtering 
-3. Charts, financial and mathematics functions (SUM, COUNTIF, INDEX + MATCH, SUMPRODUCT)
+3. Charts, financial and mathematics functions (SUMIFS, TRIM, INDEX + MATCH, SUMPRODUCT, SUM, UNIQUE, XLOOKUP)
 4. VLookup / HLookup / Xlookup
 6. Financial functions and others
 
 
 You can click the headers below to go directly to the specific chapters:
 
+# Top
+- [Top](#top)
 - [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1-data-cleaning--grouping--find-and-replace--hiding-personal-data--absolute-reference--converting-text-to-numbers)
 - [2. Cell formatting + Sorting + Filtering](#2-cell-formatting--sorting--filtering)
 - [3. Charts, financial and mathematics functions](#3-charts-financial-and-mathematics-functions)
@@ -64,18 +66,19 @@ First select everything CTRL + A and remove duplicates
 ![1 9](https://github.com/user-attachments/assets/fe08b323-af79-446c-b62b-99002ab73da3)
 
 6. Grouping
-Another thing worth doing before future analysis is proper grouping to smoothly move around the table. I suggest grouping and thus temporarily covering the columns: Product Subcategory, Product Name, Product Description, Product Size, Product Region, Product Color, Payment Method, Shipping Method
+Another thing worth doing before future analysis is proper grouping to smoothly move around the table. I suggest grouping and thus temporarily covering the columns: Product Subcategory, Product Name, Product Description, Product Size, Product Region, Product Color, Payment Method, Shipping Method.
 
 ![2 0](https://github.com/user-attachments/assets/87606dd1-21fb-4cb9-a73c-077ff7df5aef)
 
 7. Personal data
-- The last thing in preparing the data will be to cover the personal data with asterisks, for this purpose we will use a similar code as in the case of conversion to numbers, but we must determine that at least one letter of the name is visible.
+- The last thing in preparing the data will be to cover the personal data with asterisks, for this purpose we will use a similar code as in the case of conversion to numbers, but we must determine that at least one letter of the name is visible
 - The LEFT function will help us with this, which will take the first letter from the name and surname
 Then the concatenation icon, i.e. "&", and then REPT from "repeat" so that the remaining letters of the name are also covered. The length is determined by the length of the characters in a given cell -1
 
 ![2 1](https://github.com/user-attachments/assets/87042fa1-a21e-4fba-9c6c-d9d600edac93)
 
 
+# Top
 ## **2. Cell formatting + Sorting + Filtering** 
 
 1. Formatting opinions
@@ -84,12 +87,12 @@ Then the concatenation icon, i.e. "&", and then REPT from "repeat" so that the r
 ![2 1 1](https://github.com/user-attachments/assets/f963074f-a7e3-49c1-b281-4b0c9d5dffac)
 
 2. Data bars
-We can then add chart columns to each cell to visually show which bikes had a price compared to others
+We can then add chart columns to each cell to visually show which bikes had a price compared to others.
 
 ![2 1 2](https://github.com/user-attachments/assets/5fb502c9-7f5e-44db-b128-27d41763e2e7)
 
 3. Highlight shipment
-Now we can further highlight the canceled transactions
+Now we can further highlight the canceled transactions.
 
 ![2 1 3](https://github.com/user-attachments/assets/61314563-d5d9-4692-a5f8-28cca6e26d59)
 
@@ -124,7 +127,88 @@ Adding colors and mini charts is very helpful, thanks to this we can already dra
 ![2 2 0](https://github.com/user-attachments/assets/5f0e6247-37b5-4ec3-be93-b4d17fe9f013)
 
 
+# Top
 ## **3. Charts, financial and mathematics functions**
+
+1. Creating an additional table
+To simplify our data and create charts, we can create a smaller helper table that will calculate the number of bikes sold to individual countries.
+I suggest making such a table under the main table, so that on the left side, the rows are the names of the countries, and the columns are the types of bikes.
+
+![3 1 1](https://github.com/user-attachments/assets/b14cf4e1-273e-4f1f-b686-892cc79d40d3)
+
+2. Sumifs
+Now we can use the sum if function to count how many times items were purchased for each country using specific cells.
+
+![3 1 2](https://github.com/user-attachments/assets/3869ccbe-05a9-46e0-ae1e-bd7378aaebd7)
+
+Using flash fill we can drag the function to the entire length of the table.
+However, we can see that there must have been an error somewhere, the function is written correctly, yet Road Bikes shows zero. And in the previous steps we determined that the bikes were sent to Poland.
+
+So the error must be somewhere in the cells we use for the equation. When we analyze each of them, we will see that in the country names there is a space before the country name, that's why the code does not work correctly.
+
+![3 1 3](https://github.com/user-attachments/assets/16f94c0e-6493-4023-b190-609ee26ebb58)
+
+3. TRIM
+To get rid of spaces, we can type =TRIM(02), which will effectively remove unnecessary characters. Then we drag down to format all countries in this way and paste only the values ​​in place of the country names.
+
+![3 1 4](https://github.com/user-attachments/assets/5430a885-8ea6-47f1-ab35-cd49be418b27)
+
+Immediately after copying the countries without spaces, the number 3 appeared in Road Bikes, now we can drag the code to the remaining cells to fill the entire table. It is worth noting that hidden spaces are one of the most common difficulties when working with data.
+
+![3 1 5](https://github.com/user-attachments/assets/bbf446e2-4f80-4e76-b616-776e2abc8721)
+
+4. SUM
+Now it's worth adding the SUM column, which will easily show us in which countries the most bikes are purchased
+We can see that the USA is definitely in the lead, while Japan is in second place, and Germany in third.
+
+![3 1 6](https://github.com/user-attachments/assets/70d7c40c-4ba7-49c3-8bad-ccca3a8e0318)
+
+Now we can add the total amount of each type of bike sold at the bottom of the table. By selecting these cells and the cells with the bike types, we create a pie chart to show how the sales of each bike were distributed. 
+By selecting the country column and TOTAL, we create a column chart to show more pictorially how the sales results are presented in each country.
+
+![3 1 7](https://github.com/user-attachments/assets/59eb6b47-14da-410c-856c-0ecaed949c28)
+
+5. UNIQUE + INDEX + MATCH
+- Now, using the sum of the product, we can determine what share a particular type of model had in the total sales
+To do this, we need to unwind the groups that were created earlier, so that we can see the names of the bikes. We can use the UNIQUE function to quickly copy the entire column and be sure that the records are not repeated. Additionally, if more bike models are added in the future, the list will update.
+
+![3 1 8](https://github.com/user-attachments/assets/cc7fcab6-6507-488a-b21a-163b0eea9cca)
+
+To add a price to individual bikes we can use INDEX + MATCH, thanks to this the price will always stick to a specific model
+
+![3 1 9](https://github.com/user-attachments/assets/0ec24609-3ad4-4b7b-983c-ca875a3b9f05)
+
+6. XLOOKUP
+To accurately assign a price to each product, especially when the columns are grouped and covered, a good solution would be to use the XLOOKUP function
+Thanks to this, we already know what the share of individual bike models is in the sold items, we can now calculate what their share is.
+
+![3 2 0](https://github.com/user-attachments/assets/d9e53709-e681-471c-b325-3e1d12e7c9ca)
+
+- I calculate the product sum - VERY IMPORTANT - not to use the sum, because then we will only calculate the sum of sold items, which is not the same as revenue
+- We calculate the product sum from the price of the product and the quantity sold, which is divided by the price of the SPECIFIC product and its specific quantity, which gives us the division of each product by the total revenue.
+
+![3 2 1](https://github.com/user-attachments/assets/6a577263-ff6c-47ae-a7b1-adb5eb361eed)
+
+To visually show the proportions, we can use a column chart to show the differences.
+
+![3 2 2](https://github.com/user-attachments/assets/0b024637-fb16-4876-8eaa-1f617a2b2b45)
+
+7. Scatter Plot
+Because the number of individual models sold is quite small = 1,2,3 subcategories work well to check the sales shares. Which are more detailed than general categories, but less detailed than individual bike models.
+
+I suggest creating a similar table below as the one with product prices. Now, however, we will sum up all the bikes that belong to a given category using the SUMIF function. 
+
+![3 2 3](https://github.com/user-attachments/assets/8e8d2fb0-74f7-44ca-a094-e9235b40a6d1)
+
+We can calculate the number of sales in subcategories using the same SUMIF function, we change the lookup table to R, which contains the quantity. Thanks to this, we can create a Scatter Plot.
+
+![3 2 4](https://github.com/user-attachments/assets/6b81681c-90b5-4c44-bb4d-b603ec9de9f1)
+
+In the graph we can see that the largest quantities of bikes sold = 6 are in both the medium-expensive and the most expensive categories. However, the most visible purchasing pattern is the medium-expensive subcategories 4,000 - 6,500 euros with the quantity of 3,4 pieces.
+
+
+
+
 
 
 
