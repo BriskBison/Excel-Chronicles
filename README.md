@@ -7,7 +7,7 @@ I have described each example with a header to make it easier for you to navigat
 1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers (SUBSTITUTE, LEFT, REPT, LEN)
 2. Cell formatting + Sorting + Filtering 
 3. Charts, financial and mathematics functions (SUMIFS, TRIM, INDEX + MATCH, SUMPRODUCT, SUM, UNIQUE, XLOOKUP)
-4. Pivot Charts
+4. Pivot tables
 6. Financial functions and others
 
 
@@ -18,6 +18,7 @@ You can click the headers below to go directly to the specific chapters:
 - [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1-data-cleaning--grouping--find-and-replace--hiding-personal-data--absolute-reference--converting-text-to-numbers)
 - [2. Cell formatting + Sorting + Filtering](#2-cell-formatting--sorting--filtering)
 - [3. Charts, financial and mathematics functions](#3-charts-financial-and-mathematics-functions)
+- [4. Pivot tables](#4-pivot-tables)
 
 The remaining files in this repository are specific records of the Excel file, for each topic, starting with the raw file, which is the file before any changes.
 
@@ -207,13 +208,40 @@ We can calculate the number of sales in subcategories using the same SUMIF funct
 In the graph we can see that the largest quantities of bikes sold = 6 are in both the medium-expensive and the most expensive categories. However, the most visible purchasing pattern is the medium-expensive subcategories 4,000 - 6,500 euros with the quantity between 3 to 4 pieces.
 
 [Table of Contents](#table-of-contents)
-## **4. Pivot Charts**
+## **4. Pivot tables**
 
+A pivot table is a great tool that provides us with important information in a very simple and fast way. The most important thing is to choose the right values ​​in the table.
 
+A pivot table is created by selecting the entire table and choosing "Pivot table", it is best to create it in a new window.
 
+![4 1 1](https://github.com/user-attachments/assets/6952417c-b05a-400f-ae16-f2039e0f7c8f)
 
+For example, in the table below, I can quickly see how many and which L-size bikes were shipped to Australia over all the days that are counted in the main table
 
+![4 1 2](https://github.com/user-attachments/assets/3cf91666-42e7-4ccc-b5bb-6976d53fc1fc)
 
+In the same way, we can check how many bikes of a specific color were purchased in a given country. In this example, it is blue for Japan.
+
+![4 1 3](https://github.com/user-attachments/assets/19f5967f-30d8-4feb-a553-17be7471eadc)
+
+We can also calculate other values ​​than the sum, such as average, min, max, standard deviation, etc. In this example, it shows the average weight of the ordered bike, the biggest advantage of pivot tables is that we get additional information, such as the fact in which country which bike model is chosen.
+
+![4 1 4](https://github.com/user-attachments/assets/2247d8c7-33b2-4074-9769-a7e8977aec96)
+
+In pivot tables we can use the same field for several areas. In the example below the product category is assigned both as a row and as a value. In the columns is the type of payment, and the location is used as a filter, this gives us very important information in which country and which models of bikes were purchased using PayPal or Credit Card.
+
+![4 1 5](https://github.com/user-attachments/assets/b3a6890a-c545-49d9-a10a-b5246aa171fa)
+
+The pivot table refers to the main table, so if we add a new column or row to the main table, the pivot table will not update automatically.
+To do this, select the pivot table and choose "Change Data Source", then increase the range of columns / rows from which data is to be retrieved, so that it actually matches the main table. After that, use the "Refresh All" button to update the information.
+
+![4 1 6](https://github.com/user-attachments/assets/cd050c59-8697-4af9-8c4d-9d1901812838)
+
+Pivot tables can be formatted in the same way as regular tables, we can also add a slicer to them, which will allow us to select values ​​in the table more dynamically, using a separate window and a timeline, which allows us to show records based on dates in a more graphic way. 
+In this example, the table shows that from March 1 to March 16, products with prices of 1.700, 1.800 and 1.900 euros. 
+Using percentage values, we can easily indicate how the values ​​are distributed among individual countries, thanks to which we know that over 66.67% of canceled transactions occurred on March 3.
+
+![4 1 7](https://github.com/user-attachments/assets/54a901a2-dcd5-42af-9c2f-0f9ee79ab3be)
 
 
 
