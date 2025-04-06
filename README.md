@@ -7,14 +7,14 @@ I have described each example with a header to make it easier for you to navigat
 1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers (SUBSTITUTE, LEFT, REPT, LEN)
 2. Cell formatting + Sorting + Filtering 
 3. Charts, financial and mathematics functions (SUMIFS, TRIM, INDEX + MATCH, SUMPRODUCT, SUM, UNIQUE, XLOOKUP)
-4. VLookup / HLookup / Xlookup
+4. Pivot Charts
 6. Financial functions and others
 
 
 You can click the headers below to go directly to the specific chapters:
 
-# Top
-- [Top](#top)
+# Table of Contents
+- [Table of Contents](#table-of-contents)
 - [1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers](#1-data-cleaning--grouping--find-and-replace--hiding-personal-data--absolute-reference--converting-text-to-numbers)
 - [2. Cell formatting + Sorting + Filtering](#2-cell-formatting--sorting--filtering)
 - [3. Charts, financial and mathematics functions](#3-charts-financial-and-mathematics-functions)
@@ -78,7 +78,7 @@ Then the concatenation icon, i.e. "&", and then REPT from "repeat" so that the r
 ![2 1](https://github.com/user-attachments/assets/87042fa1-a21e-4fba-9c6c-d9d600edac93)
 
 
-# Top
+[Table of Contents](#table-of-contents)
 ## **2. Cell formatting + Sorting + Filtering** 
 
 1. Formatting opinions
@@ -127,7 +127,7 @@ Adding colors and mini charts is very helpful, thanks to this we can already dra
 ![2 2 0](https://github.com/user-attachments/assets/5f0e6247-37b5-4ec3-be93-b4d17fe9f013)
 
 
-# Top
+[Table of Contents](#table-of-contents)
 ## **3. Charts, financial and mathematics functions**
 
 1. Creating an additional table
@@ -204,10 +204,10 @@ We can calculate the number of sales in subcategories using the same SUMIF funct
 
 ![3 2 4](https://github.com/user-attachments/assets/6b81681c-90b5-4c44-bb4d-b603ec9de9f1)
 
-In the graph we can see that the largest quantities of bikes sold = 6 are in both the medium-expensive and the most expensive categories. However, the most visible purchasing pattern is the medium-expensive subcategories 4,000 - 6,500 euros with the quantity of 3,4 pieces.
+In the graph we can see that the largest quantities of bikes sold = 6 are in both the medium-expensive and the most expensive categories. However, the most visible purchasing pattern is the medium-expensive subcategories 4,000 - 6,500 euros with the quantity between 3 to 4 pieces.
 
-
-
+[Table of Contents](#table-of-contents)
+## **4. Pivot Charts**
 
 
 
