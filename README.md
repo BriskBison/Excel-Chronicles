@@ -20,7 +20,7 @@ You can click the headers below to go directly to the specific chapters:
 - [2. Cell formatting + Sorting + Filtering](#2-cell-formatting--sorting--filtering)
 - [3. Charts, financial and mathematics functions](#3-charts-financial-and-mathematics-functions)
 - [4. Pivot tables](#4-pivot-tables)
-- [5. Financial calculations](#5-financial-calculations)
+- [5. Financial calculations (Average, conversion to USD, profit, revenue gross/net, cost, average order value, unit cost, profit margin)](#5-financial-calculations-(average,-conversion-to-usd,-profit,-revenue-gross/net,-cost,-average-order-value,-unit-cost,-profit-margin))
 
 
 
@@ -246,7 +246,7 @@ Using percentage values, we can easily indicate how the values ​​are distrib
 
 
 [Table of Contents](#table-of-contents)
-## **5. Financial calculations (Average, conversion to USD, profit, revenue gros/net, cost, average order value, unit cost, profit margin)**
+## **5. Financial calculations (Average, conversion to USD, profit, revenue gross/net, cost, average order value, unit cost, profit margin)**
 
 In this section, I would like to present additional functions that we can use to interpret the results
 
