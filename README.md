@@ -8,8 +8,9 @@ I have described each example with a header to make it easier for you to navigat
 2. Cell formatting + Sorting + Filtering 
 3. Charts, financial and mathematics functions (SUMIFS, TRIM, INDEX + MATCH, SUMPRODUCT, SUM, UNIQUE, XLOOKUP)
 4. Pivot tables
-6. Financial functions and others
+5. Financial calculations (Average, conversion to USD, profit, revenue gross/net, cost, average order value, unit cost, profit margin)
 
+In the second file of this repository I have placed a csv file for download.
 
 You can click the headers below to go directly to the specific chapters:
 
@@ -19,8 +20,8 @@ You can click the headers below to go directly to the specific chapters:
 - [2. Cell formatting + Sorting + Filtering](#2-cell-formatting--sorting--filtering)
 - [3. Charts, financial and mathematics functions](#3-charts-financial-and-mathematics-functions)
 - [4. Pivot tables](#4-pivot-tables)
+- [5. Financial calculations](#5-financial-calculations)
 
-The remaining files in this repository are specific records of the Excel file, for each topic, starting with the raw file, which is the file before any changes.
 
 
 ## **1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers** 
@@ -242,6 +243,52 @@ In this example, the table shows that from March 1 to March 16, products with pr
 Using percentage values, we can easily indicate how the values ​​are distributed among individual countries, thanks to which we know that over 66.67% of canceled transactions occurred on March 3.
 
 ![4 1 7](https://github.com/user-attachments/assets/54a901a2-dcd5-42af-9c2f-0f9ee79ab3be)
+
+
+[Table of Contents](#table-of-contents)
+## **5. Financial calculations (Average, conversion to USD, profit, revenue gros/net, cost, average order value, unit cost, profit margin)**
+
+In this section, I would like to present additional functions that we can use to interpret the results
+
+1. Average + USD + Data Validation
+- We use AVERAGE to calculate the average order amount
+In the column next to it I have placed the dollar rate from today, we can set Data Validation, so that if in the future someone enters a new dollar rate, to make sure that the amount entered will not be below 0.01
+
+
+![5 1 1](https://github.com/user-attachments/assets/361061c6-4fba-4d4b-ad3a-622003e9915e)
+
+![5 1 2](https://github.com/user-attachments/assets/12715366-8c39-4448-bb22-4717fc802008)
+
+2. Gross / Net
+In this example, I show how to calculate the net value of total revenue, i.e. net of tax, at a tax rate of 18%.
+
+![5 1 3](https://github.com/user-attachments/assets/ab86da59-872d-412f-bfdc-3df6a84d0259)
+
+3. Profit
+One of the most important pieces of information is calculating the profit, below I present the gross and net profit, assuming that the costs amounted to 80% of the revenue and the tax is 18%
+
+![5 1 4](https://github.com/user-attachments/assets/97a910de-75e5-473d-9193-fe897d813187)
+
+4. AOV - Average Order Value
+We can calculate the average order value by dividing the sales revenue by the number of orders, as in the example below
+
+![5 1 5](https://github.com/user-attachments/assets/3c51b8c7-2450-49c4-aa8f-0e0a52cac412)
+
+5. Unit cost
+Unit cost is very useful for calculating how much money a company spends on producing one product. It is crucial when planning a budget and looking for opportunities to cut costs. The formula for this is the cost of goods sold / quantity of products sold.
+
+![5 1 6](https://github.com/user-attachments/assets/29b61e59-ec8c-4c0a-88ee-af4a934b3872)
+
+6. Profit Margin
+The margin shows the company what the best prices are and helps monitor the efficiency and profitability of the given activities. The formula for margins is gross profit / revenue * 100. In this situation, it is not recommended to multiply by 100, because Excel will detect the percentage number when this form is set in a given cell.
+
+![5 1 7](https://github.com/user-attachments/assets/ea711af0-717e-456a-bbe9-880ce67efcb3)
+
+
+[Table of Contents](#table-of-contents)
+
+
+
 
 
 
