@@ -4,11 +4,15 @@ In this file, I would like to present my knowledge of Excel in practical activit
 
 I have described each example with a header to make it easier for you to navigate.
 
+---
+
 1. Data cleaning + Grouping + Find and replace + Hiding personal data + absolute reference + converting text to numbers (SUBSTITUTE, LEFT, REPT, LEN)
 2. Cell formatting + Sorting + Filtering 
 3. Charts, financial and mathematics functions (SUMIFS, TRIM, INDEX + MATCH, SUMPRODUCT, SUM, UNIQUE, XLOOKUP)
 4. Pivot tables
 5. Financial calculations (Average, conversion to USD, profit, revenue gross/net, cost, average order value, unit cost, profit margin)
+
+---
 
 In the second file of this repository I have placed a csv file for download.
 
