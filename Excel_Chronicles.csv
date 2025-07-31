@@ -1,0 +1,247 @@
+Product ID;Product Category;Product Subcategory;Product Name;Product Description; Product Price ;Product Weight;Product Size;Product Region;Product Color;Product Stock;Order ID;Customer ID;Customer Name;Customer Location;Order Date;Order Status;Order Quantity; Order Total ;Payment Method;Shipping Method;Shipping Time (in Days);Estimated Delivery Date;Customer Feedback;;;;;;;;;
+1001;Mountain Bikes;Cross Country;TrailBlazer 1000;Lightweight and versatile; € 1 200,00 ; 25,00 ;M;North America;Red;50;2001;3001;J*******;USA;01.03.2023;Shipped;2; € 2 400,00 ;Credit Card;Ground;3;04.03.2023;Positive;;;;;;;;;
+1002;Mountain Bikes;Cross Country;TrailBlazer 2000;High-performance mountain bike; € 1 500,00 ; 22,00 ;L;Europe;Blue;20;2002;3002;J*********;UK;02.03.2023;Processing;1; € 1 500,00 ;PayPal;Air;2;03.03.2023;Neutral;;;;;;;;;
+1003;Road Bikes;Racing;SpeedMaster 1000;Agile and aerodynamic road bike; € 1 800,00 ; 18,00 ;M;Asia;Yellow;30;2003;3003;J************;Japan;03.03.2023;Cancelled;3; € 5 400,00 ;Credit Card;Ground;5;07.03.2023;Positive;;;;;;;;;
+1004;Road Bikes;Racing;SpeedMaster 2000;Premium racing road bike; € 2 100,00 ; 16,00 ;L;North America;Black;40;2004;3004;M***********;USA;04.03.2023;Shipped;1; € 2 100,00 ;Credit Card;Air;1;04.03.2023;Negative;;;;;;;;;
+1005;Touring Bikes;Long Distance;Explorer 1000;Comfortable and durable touring bike; € 1 300,00 ; 27,00 ;M;Europe;Green;25;2005;3005;R***********;Germany;05.03.2023;Processing;2; € 2 600,00 ;PayPal;Ground;4;08.03.2023;Positive;;;;;;;;;
+1006;Touring Bikes;Long Distance;Explorer 2000;Advanced touring bike; € 1 600,00 ; 24,00 ;L;Europe;Red;15;2006;3006;E***********;Spain;06.03.2023;Shipped;1; € 1 600,00 ;Credit Card;Air;2;07.03.2023;Positive;;;;;;;;;
+1007;Mountain Bikes;Downhill;GravityMaster 1000;Rugged and durable downhill bike; € 2 200,00 ; 29,00 ;M;Asia;Orange;25;2007;3007;D***********;China;07.03.2023;Shipped;2; € 4 400,00 ;PayPal;Ground;5;11.03.2023;Negative;;;;;;;;;
+1008;Mountain Bikes;Downhill;GravityMaster 2000;Rugged and durable downhill bike; € 2 500,00 ; 27,00 ;L;North America;White;35;2008;3008;S***********;USA;08.03.2023;Processing;1; € 2 500,00 ;Credit Card;Air;1;08.03.2023;Positive;;;;;;;;;
+1021;Mountain Bikes;Trail;Pathfinder 1000;Agile trail bike for all skill levels; € 1 100,00 ; 24,00 ;M;Europe;Blue;30;2021;3021;J**********;France;21.03.2023;Shipped;2; € 2 200,00 ;Credit Card;Ground;4;12.03.2023;Neutral;;;;;;;;;
+1022;Mountain Bikes;Trail;Pathfinder 2000;High-performance trail bike; € 1 400,00 ; 21,00 ;L;Europe;Red;20;2022;3022;L*********;Germany;22.03.2023;Processing;1; € 1 400,00 ;PayPal;Air;2;14.03.2023;Positive;;;;;;;;;
+1023;Road Bikes;Touring;Voyager 1000;Comfortable touring road bike; € 1 700,00 ; 20,00 ;M;Asia;Green;18;2023;3023;W************;Japan;23.03.2023;Cancelled;3; € 5 100,00 ;Credit Card;Ground;5;18.03.2023;Neutral;;;;;;;;;
+1024;Road Bikes;Touring;Voyager 2000;Advanced touring road bike; € 2 000,00 ; 18,00 ;L;North America;Black;22;2024;3024;E*********;USA;24.03.2023;Shipped;1; € 2 000,00 ;Credit Card;Air;1;15.03.2023;Positive;;;;;;;;;
+1025;Touring Bikes;Touring;Adventurer 1000;Durable bike for long adventures; € 1 500,00 ; 28,00 ;M;Europe;Yellow;23;2025;3025;J*********;UK;25.03.2023;Processing;2; € 3 000,00 ;PayPal;Ground;4;19.03.2023;Neutral;;;;;;;;;
+1026;Touring Bikes;Adventure;Adventurer 2000;Premium adventure touring bike; € 1 800,00 ; 26,00 ;L;Asia;White;20;2026;3026;S**************;China;26.03.2023;Shipped;1; € 1 800,00 ;Credit Card;Air;2;18.03.2023;Positive;;;;;;;;;
+1027;Mountain Bikes;Enduro;EnduroMaster 1000;Endurance-focused mountain bike; € 2 300,00 ; 30,00 ;M;North America;Blue;18;2027;3027;M**************;USA;27.03.2023;Shipped;2; € 4 600,00 ;PayPal;Ground;5;22.03.2023;Negative;;;;;;;;;
+1028;Mountain Bikes;Enduro;EnduroMaster 2000;High-performance enduro mountain bike; € 2 600,00 ; 28,00 ;L;Europe;Red;20;2028;3028;O************;Italy;28.03.2023;Processing;1; € 2 600,00 ;Credit Card;Air;1;19.03.2023;Positive;;;;;;;;;
+1041;Mountain Bikes;Fat Bikes;FatTrail 1000;All-terrain fat bike; € 1 300,00 ; 32,00 ;M;Asia;Black;20;2041;3041;E***********;South Korea;11.03.2023;Shipped;2; € 2 600,00 ;Credit Card;Ground;4;23.03.2023;Neutral;;;;;;;;;
+1042;Mountain Bikes;Fat Bikes;FatTrail 2000;High-performance fat bike; € 1 600,00 ; 29,00 ;L;Europe;Green;20;2042;3042;A*********;France;12.03.2023;Processing;1; € 1 600,00 ;PayPal;Air;2;22.03.2023;Positive;;;;;;;;;
+1043;Road Bikes;Cyclocross;CrossRider 1000;Versatile cyclocross bike; € 1 900,00 ; 21,00 ;M;Asia;White;18;2043;3043;I***************;USA;13.03.2023;Cancelled;3; € 5 700,00 ;Credit Card;Ground;5;26.03.2023;Neutral;;;;;;;;;
+1044;Road Bikes;Cyclocross;CrossRider 2000;Advanced cyclocross bike; € 2 200,00 ; 19,00 ;L;Europe;Red;20;2044;3044;A**************;Greece;14.03.2023;Shipped;1; € 2 200,00 ;Credit Card;Air;2;24.03.2023;Positive;;;;;;;;;
+1045;Touring Bikes;Tandem;DuoExplorer 1000;Comfortable tandem touring bike; € 2 000,00 ; 36,00 ;M;Asia;Green;18;2045;3045;L**********;India;15.03.2023;Processing;2; € 4 000,00 ;PayPal;Ground;5;28.03.2023;Neutral;;;;;;;;;
+1046;Touring Bikes;Tandem;DuoExplorer 2000;High-performance tandem touring bike; € 2 300,00 ; 34,00 ;L;North America;Black;22;2046;3046;S***********;USA;16.03.2023;Shipped;1; € 2 300,00 ;Credit Card;Air;1;25.03.2023;Positive;;;;;;;;;
+1047;Mountain Bikes;Electric;E-Mountain 1000;Electric mountain bike; € 3 000,00 ; 40,00 ;M;Europe;Yellow;23;2047;3047;B****************;Ireland;17.03.2023;Shipped;2; € 6 000,00 ;PayPal;Ground;4;29.03.2023;Neutral;;;;;;;;;
+1048;Mountain Bikes;Electric;E-Mountain 2000;High-performance electric mountain bike; € 3 500,00 ; 38,00 ;L;Asia;White;20;2048;3048;M*********;Taiwan;18.03.2023;Processing;1; € 3 500,00 ;Credit Card;Air;2;28.03.2023;Positive;;;;;;;;;
+1061;E-Bikes;City;UrbanEco 1000;Eco-friendly electric city bike; € 2 000,00 ; 35,00 ;M;North America;Blue;18;2061;3061;N***********;Canada;01.03.2023;Shipped;2; € 4 000,00 ;Credit Card;Ground;5;01.04.2023;Negative;;;;;;;;;
+1062;E-Bikes;City;UrbanEco 2000;High-performance electric city bike; € 2 500,00 ; 33,00 ;L;Europe;Silver;20;2062;3062;H**************;Germany;02.03.2023;Processing;1; € 2 500,00 ;PayPal;Air;1;29.03.2023;Positive;;;;;;;;;
+1063;Road Bikes;Gravel;GravelMaster 1000;All-terrain gravel bike; € 1 700,00 ; 22,00 ;M;Europe;Orange;21;2063;3063;A***********;Spain;03.03.2023;Cancelled;3; € 5 100,00 ;Credit Card;Air;2;31.03.2023;Neutral;;;;;;;;;
+1064;Road Bikes;Gravel;GravelMaster 2000;High-performance gravel bike; € 2 100,00 ; 20,00 ;L;Asia;Red;19;2064;3064;E***********;China;04.03.2023;Shipped;1; € 2 100,00 ;Credit Card;Ground;4;03.04.2023;Positive;;;;;;;;;
+1065;Touring Bikes;Folding;FoldAway 1000;Compact folding touring bike; € 1 500,00 ; 30,00 ;M;North America;Black;17;2065;3065;I*************;USA;05.03.2023;Processing;2; € 3 000,00 ;PayPal;Air;2;02.04.2023;Negative;;;;;;;;;
+1066;Touring Bikes;Folding;FoldAway 2000;Advanced folding touring bike; € 1 800,00 ; 28,00 ;L;Europe;White;20;2066;3066;L*********;Italy;06.03.2023;Shipped;1; € 1 800,00 ;Credit Card;Ground;4;05.04.2023;Positive;;;;;;;;;
+1067;E-Bikes;Mountain;E-TrailBlazer 1000;Electric mountain bike; € 3 200,00 ; 42,00 ;M;Europe;Blue;18;2067;3067;M**********;UK;07.03.2023;Shipped;2; € 6 400,00 ;PayPal;Air;2;04.04.2023;Neutral;;;;;;;;;
+1068;E-Bikes;Mountain;E-TrailBlazer 2000;High-performance electric mountain bike; € 3 700,00 ; 40,00 ;L;Asia;Yellow;20;2068;3068;N***********;Japan;08.03.2023;Processing;1; € 3 700,00 ;Credit Card;Air;1;04.04.2023;Positive;;;;;;;;;
+1081;Hybrid Bikes;Commuter;CommutePro 1000;Efficient commuter hybrid bike; € 1 200,00 ; 27,00 ;M;North America;Green;19;2081;3081;A*********;USA;19.02.2023;Shipped;2; € 2 400,00 ;Credit Card;Ground;5;09.04.2023;Neutral;;;;;;;;;
+1082;Hybrid Bikes;Commuter;CommutePro 2000;High-performance commuter hybrid bike; € 1 500,00 ; 25,00 ;L;Europe;Silver;19;2082;3082;S************;France;20.02.2023;Processing;1; € 1 500,00 ;PayPal;Air;1;06.04.2023;Positive;;;;;;;;;
+1083;Road Bikes;Aero;AeroSpeed 1000;Aerodynamic road bike; € 2 800,00 ; 18,00 ;M;Europe;Orange;18;2083;3083;B****************;Poland;21.02.2023;Cancelled;3; € 8 400,00 ;Credit Card;Air;2;08.04.2023;Neutral;;;;;;;;;
+1084;Road Bikes;Aero;AeroSpeed 2000;Advanced aerodynamic road bike; € 3 200,00 ; 16,00 ;L;Asia;Red;21;2084;3084;H**************;South Korea;22.02.2023;Shipped;1; € 3 200,00 ;Credit Card;Ground;4;11.04.2023;Positive;;;;;;;;;
+1085;Touring Bikes;Recumbent;ReclineRider 1000;Comfortable recumbent touring bike; € 2 000,00 ; 33,00 ;M;North America;Black;20;2085;3085;E**********;USA;23.02.2023;Processing;2; € 4 000,00 ;PayPal;Air;2;10.04.2023;Negative;;;;;;;;;
+1086;Touring Bikes;Recumbent;ReclineRider 2000;High-performance recumbent touring bike; € 2 400,00 ; 30,00 ;L;Europe;White;18;2086;3086;I*************;Portugal;24.02.2023;Shipped;1; € 2 400,00 ;Credit Card;Ground;4;13.04.2023;Positive;;;;;;;;;
+1087;Mountain Bikes;Downhill;DownhillDominator 1000;Downhill mountain bike; € 2 900,00 ; 34,00 ;M;Europe;Blue;20;2087;3087;L***********;Netherlands;25.02.2023;Shipped;2; € 5 800,00 ;PayPal;Air;2;12.04.2023;Neutral;;;;;;;;;
+1088;Mountain Bikes;Downhill;DownhillDominator 2000;High-performance downhill mountain bike; € 3 300,00 ; 32,00 ;L;Asia;Yellow;22;2088;3088;M*********;China;26.02.2023;Processing;1; € 3 300,00 ;PayPal;Air;1;12.04.2023;Positive;;;;;;;;;
+1101;Kids Bikes;Balance;LittleBalancer 1000;Starter balance bike for kids; € 150,00 ; 10,00 ;M;North America;Green;20;2101;3101;N**********;Canada;01.02.2023;Shipped;2; € 300,00 ;Credit Card;Ground;5;17.04.2023;Neutral;;;;;;;;;
+1102;Kids Bikes;Balance;LittleBalancer 2000;Upgraded balance bike for kids; € 200,00 ; 9,00 ;L;Europe;Silver;18;2102;3102;S**************;Spain;02.02.2023;Processing;1; € 200,00 ;PayPal;Air;1;14.04.2023;Positive;;;;;;;;;
+1103;BMX Bikes;Freestyle;FreestyleMaster 1000;Beginner freestyle BMX bike; € 400,00 ; 25,00 ;M;Europe;Orange;20;2103;3103;B****************;Germany;03.02.2023;Cancelled;3; € 1 200,00 ;Credit Card;Air;2;16.04.2023;Neutral;;;;;;;;;
+1104;BMX Bikes;Freestyle;FreestyleMaster 2000;Advanced freestyle BMX bike; € 600,00 ; 23,00 ;L;Asia;Red;23;2104;3104;H***********;Australia;04.02.2023;Shipped;1; € 600,00 ;Credit Card;Ground;4;19.04.2023;Positive;;;;;;;;;
+1105;Mountain Bikes;Cross Country;XC-Rider 1000;Cross country mountain bike; € 1 800,00 ; 29,00 ;M;North America;Black;21;2105;3105;E**********;Canada;05.02.2023;Processing;2; € 3 600,00 ;PayPal;Air;2;18.04.2023;Negative;;;;;;;;;
+1106;Mountain Bikes;Cross Country;XC-Rider 2000;High-performance cross country bike; € 2 400,00 ; 27,00 ;L;Asia;Blue;26;2106;3106;N***********;Japan;06.02.2023;Shipped;1; € 2 400,00 ;Credit Card;Air;3;09.02.2023;Positive;;;;;;;;;
+1107;Road Bikes;Endurance;EnduranceElite 1000;Endurance road bike; € 2 100,00 ; 20,00 ;M;North America;Orange;30;2107;3107;J**********;France;07.02.2023;Shipped;2; € 4 200,00 ;PayPal;Ground;2;09.02.2023;Negative;;;;;;;;;
+1108;Road Bikes;Endurance;EnduranceElite 2000;High-performance endurance road bike; € 2 600,00 ; 18,00 ;L;Europe;Blue;26;2108;3108;N***********;Japan;08.02.2023;Processing;1; € 2 600,00 ;Credit Card;Air;1;09.02.2023;Positive;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;Countries by Order quantity;;;;;;;;;;;;;;;;;
+;;Mountain Bikes;Road Bikes;;Mountain Bikes;;;;;;;;;Road Bikes;Touring Bikes;E-Bikes;BMX Bikes;Hybrid Bikes;;;Kids Bikes;TOTAL;;;;;;;;;;USA
+;Poland;;;;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;3;;;;;;;;;;UK
+;UK;;;;1;0;0;0;0;0;0;0;0;0;2;2;0;0;0;0;0;5;;;;;;;;;;Japan
+;Japan;;;;1;0;0;0;0;0;0;0;0;7;0;1;0;0;0;0;0;9;;;;;;;;;;USA
+;USA;;;;5;0;0;0;0;0;0;0;0;5;5;0;0;2;0;0;0;17;;;;;;;;;;Germany
+;Spain;;;;0;0;0;0;0;0;0;0;0;3;1;0;0;0;0;0;1;5;;;;;;;;;;Spain
+;China;;;;3;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;5;;;;;;;;;;China
+;Germany;;;;1;0;0;0;0;0;0;0;0;0;2;1;3;0;0;0;0;7;;;;;;;;;;USA
+;France;;;;3;0;0;0;0;0;0;0;0;2;0;0;0;1;0;0;0;6;;;;;;;;;;France
+;Australia;;;;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;;;;;;;;;;Germany
+;Italy;;;;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;2;;;;;;;;;;Japan
+;South Korea;;;;2;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;3;;;;;;;;;;USA
+;Canada;;;;2;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;2;6;;;;;;;;;;UK
+;India;;;;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;2;;;;;;;;;;China
+;Ireland;;;;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;;;;;;;;;;USA
+;Netherlands;;;;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;;;;;;;;;;Italy
+;Greece;;;;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;1;;;;;;;;;;South Korea
+;Portugal;;;;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;1;;;;;;;;;;France
+;Taiwan;;;;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;;;;;;;;;;USA
+;;;;;24;0;0;0;0;0;0;0;0;23;15;6;4;3;0;0;3;78;;;;;;;;;;Greece
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;India
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;USA
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Ireland
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Taiwan
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Canada
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Germany
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Spain
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;China
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;USA
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Italy
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UK
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Japan
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;USA
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;France
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Poland
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;South Korea
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;USA
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Portugal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Netherlands
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;China
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Canada
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Spain
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Germany
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Australia
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Canada
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Japan
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;France
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;; -   ;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;89973,00;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;Product Name;;;;;;;;;Product Price;Product Quantity;Share of Sales Value;;;;;;;;;;;;;;;;
+;;;;; TrailBlazer 1000 ;;;;;;;;; € 1 200,00 ;2;1,6%;;;;;;;;;;;;;;;;
+;;;;; TrailBlazer 2000 ;;;;;;;;; € 1 500,00 ;1;1,0%;;;;;;;;;;;;;;;;
+;;;;; SpeedMaster 1000 ;;;;;;;;; € 1 800,00 ;3;3,7%;;;;;;;;;;;;;;;;
+;;;;; SpeedMaster 2000 ;;;;;;;;; € 2 100,00 ;1;1,4%;;;;;;;;;;;;;;;;
+;;;;; Explorer 1000 ;;;;;;;;; € 1 300,00 ;2;1,8%;;;;;;;;;;;;;;;;
+;;;;; Explorer 2000 ;;;;;;;;; € 1 600,00 ;1;1,1%;;;;;;;;;;;;;;;;
+;;;;; GravityMaster 1000 ;;;;;;;;; € 2 200,00 ;2;3,0%;;;;;;;;;;;;;;;;
+;;;;; GravityMaster 2000 ;;;;;;;;; € 2 500,00 ;1;1,7%;;;;;;;;;;;;;;;;
+;;;;; Pathfinder 1000 ;;;;;;;;; € 1 100,00 ;2;1,5%;;;;;;;;;;;;;;;;
+;;;;; Pathfinder 2000 ;;;;;;;;; € 1 400,00 ;1;0,9%;;;;;;;;;;;;;;;;
+;;;;; Voyager 1000 ;;;;;;;;; € 1 700,00 ;3;3,5%;;;;;;;;;;;;;;;;
+;;;;; Voyager 2000 ;;;;;;;;; € 2 000,00 ;1;1,4%;;;;;;;;;;;;;;;;
+;;;;;Adventurer 1000;;;;;;;;; € 1 500,00 ;2;2,0%;;;;;;;;;;;;;;;;
+;;;;; Adventurer 2000 ;;;;;;;;; € 1 800,00 ;1;1,2%;;;;;;;;;;;;;;;;
+;;;;; EnduroMaster 1000 ;;;;;;;;; € 2 300,00 ;2;3,1%;;;;;;;;;;;;;;;;
+;;;;; EnduroMaster 2000 ;;;;;;;;; € 2 600,00 ;1;1,8%;;;;;;;;;;;;;;;;
+;;;;; FatTrail 1000 ;;;;;;;;; € 1 300,00 ;2;1,8%;;;;;;;;;;;;;;;;
+;;;;;FatTrail 2000;;;;;;;;; € 1 600,00 ;1;1,1%;;;;;;;;;;;;;;;;
+;;;;; CrossRider 1000 ;;;;;;;;; € 1 900,00 ;3;3,9%;;;;;;;;;;;;;;;;
+;;;;; CrossRider 2000 ;;;;;;;;; € 2 200,00 ;1;1,5%;;;;;;;;;;;;;;;;
+;;;;; DuoExplorer 1000 ;;;;;;;;; € 2 000,00 ;2;2,7%;;;;;;;;;;;;;;;;
+;;;;; DuoExplorer 2000 ;;;;;;;;; € 2 300,00 ;1;1,6%;;;;;;;;;;;;;;;;
+;;;;; E-Mountain 1000 ;;;;;;;;; € 3 000,00 ;2;4,1%;;;;;;;;;;;;;;;;
+;;;;; E-Mountain 2000 ;;;;;;;;; € 3 500,00 ;1;2,4%;;;;;;;;;;;;;;;;
+;;;;; UrbanEco 1000 ;;;;;;;;; € 2 000,00 ;2;2,7%;;;;;;;;;;;;;;;;
+;;;;; UrbanEco 2000 ;;;;;;;;; € 2 500,00 ;1;1,7%;;;;;;;;;;;;;;;;
+;;;;; GravelMaster 1000 ;;;;;;;;; € 1 700,00 ;3;3,5%;;;;;;;;;;;;;;;;
+;;;;; GravelMaster 2000 ;;;;;;;;; € 2 100,00 ;1;1,4%;;;;;;;;;;;;;;;;
+;;;;; FoldAway 1000 ;;;;;;;;; € 1 500,00 ;2;2,0%;;;;;;;;;;;;;;;;
+;;;;; FoldAway 2000 ;;;;;;;;; € 1 800,00 ;1;1,2%;;;;;;;;;;;;;;;;
+;;;;; E-TrailBlazer 1000 ;;;;;;;;; € 3 200,00 ;2;4,3%;;;;;;;;;;;;;;;;
+;;;;; E-TrailBlazer 2000 ;;;;;;;;; € 3 700,00 ;1;2,5%;;;;;;;;;;;;;;;;
+;;;;; CommutePro 1000 ;;;;;;;;; € 1 200,00 ;2;1,6%;;;;;;;;;;;;;;;;
+;;;;; CommutePro 2000 ;;;;;;;;; € 1 500,00 ;1;1,0%;;;;;;;;;;;;;;;;
+;;;;; AeroSpeed 1000 ;;;;;;;;; € 2 800,00 ;3;5,7%;;;;;;;;;;;;;;;;
+;;;;; AeroSpeed 2000 ;;;;;;;;; € 3 200,00 ;1;2,2%;;;;;;;;;;;;;;;;
+;;;;; ReclineRider 1000 ;;;;;;;;; € 2 000,00 ;2;2,7%;;;;;;;;;;;;;;;;
+;;;;; ReclineRider 2000 ;;;;;;;;; € 2 400,00 ;1;1,6%;;;;;;;;;;;;;;;;
+;;;;; DownhillDominator 1000 ;;;;;;;;; € 2 900,00 ;2;3,9%;;;;;;;;;;;;;;;;
+;;;;; DownhillDominator 2000 ;;;;;;;;; € 3 300,00 ;1;2,2%;;;;;;;;;;;;;;;;
+;;;;; LittleBalancer 1000 ;;;;;;;;; € 150,00 ;2;0,2%;;;;;;;;;;;;;;;;
+;;;;; LittleBalancer 2000 ;;;;;;;;; € 200,00 ;1;0,1%;;;;;;;;;;;;;;;;
+;;;;; FreestyleMaster 1000 ;;;;;;;;; € 400,00 ;3;0,8%;;;;;;;;;;;;;;;;
+;;;;; FreestyleMaster 2000 ;;;;;;;;; € 600,00 ;1;0,4%;;;;;;;;;;;;;;;;
+;;;;; XC-Rider 1000 ;;;;;;;;; € 1 800,00 ;2;2,4%;;;;;;;;;;;;;;;;
+;;;;; XC-Rider 2000 ;;;;;;;;; € 2 400,00 ;1;1,6%;;;;;;;;;;;;;;;;
+;;;;; EnduranceElite 1000 ;;;;;;;;; € 2 100,00 ;2;2,8%;;;;;;;;;;;;;;;;
+;;;;; EnduranceElite 2000 ;;;;;;;;; € 2 600,00 ;1;1,8%;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;; € 94 450,00 ;78;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Subcategory ;;;;;;;;;Subcategory Total Price;Subcategory Quantity;;;;;;;;;;;;;;;;;
+;;;;; Cross Country ;;;;;;;;; € 6 900,00 ;6;;;;;;;;;;;;;;;;;
+;;;;; Racing ;;;;;;;;; € 3 900,00 ;4;;;;;;;;;;;;;;;;;
+;;;;; Long Distance ;;;;;;;;; € 2 900,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Downhill ;;;;;;;;; € 10 900,00 ;6;;;;;;;;;;;;;;;;;
+;;;;; Trail ;;;;;;;;; € 2 500,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Touring ;;;;;;;;; € 5 200,00 ;6;;;;;;;;;;;;;;;;;
+;;;;; Adventure ;;;;;;;;; € 1 800,00 ;1;;;;;;;;;;;;;;;;;
+;;;;; Enduro ;;;;;;;;; € 4 900,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Fat Bikes ;;;;;;;;; € 2 900,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Cyclocross ;;;;;;;;; € 4 100,00 ;4;;;;;;;;;;;;;;;;;
+;;;;; Tandem ;;;;;;;;; € 4 300,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Electric ;;;;;;;;; € 6 500,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; City ;;;;;;;;; € 4 500,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Gravel ;;;;;;;;; € 3 800,00 ;4;;;;;;;;;;;;;;;;;
+;;;;; Folding ;;;;;;;;; € 3 300,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Mountain ;;;;;;;;; € 6 900,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Commuter ;;;;;;;;; € 2 700,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Aero ;;;;;;;;; € 6 000,00 ;4;;;;;;;;;;;;;;;;;
+;;;;; Recumbent ;;;;;;;;; € 4 400,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Balance ;;;;;;;;; € 350,00 ;3;;;;;;;;;;;;;;;;;
+;;;;; Freestyle ;;;;;;;;; € 1 000,00 ;4;;;;;;;;;;;;;;;;;
+;;;;; Endurance ;;;;;;;;; € 4 700,00 ;3;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Average Order Amount ;;;;;;;;; € 3 079,17 ;;USD/EUR exchange rate; 1,10 ;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Average Order Amount in USD ;;;;;;;;; $3 387,08 ;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Revenue gross ;;;;;;;;; € 147 800,00 ;;;;;;;;;;;;;;;;;;
+;;;;;Revenue net worth;;;;;;;;; € 121 196,00 ;;Sales TAX:;18%;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Cost (assuming 80%) ;;;;;;;;; € 118 240,00 ;;;;;;;;;;;;;;;;;;
+;;;;; Profit ;;;;;;;;; € 29 560,00 ;;;;;;;;;;;;;;;;;;
+;;;;; Profit net (without operational costs) ;;;;;;;;; € 24 239,20 ;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; AOV ( Average Order Value ) ;;;;;;;;; € 1 894,87 ;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Unit cost ;;;;;;;;; € 1 515,90 ;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Profit Margin ;;;;;;;;;20,0%;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
