@@ -1,0 +1,11 @@
+﻿first_name;last_name;HERO;sale_date;sales_value;city
+Bruce;Wayne;batman;1.06.2025;1.200;gotham
+clark;Kent;Superman;2.06.2025;0;metropolis
+DIANA;Prince;wonder woman;1.06.2025;1 100;THEMYSCIRA
+Barry;Allen;Flash;June 3rd, 2025;870;central city
+Arthur;Curry;AQUAMAN;4.06.2025;1.050;ATLANTIS
+bruce;Wayne;batman;5.06.2025;no data;GOTHAM
+Clark;kent;superman;6.06.2025;$980;METROPOLIS
+Diana;PRINCE;Wonder Woman;7.06.2025;1,150.00;themyscira
+barry;allen;FLASH;7.06.2025;890;CENTRAL CITY
+Arthur;Curry;Aquaman;8.06.2025;990.0;Atlantis
