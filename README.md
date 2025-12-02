@@ -49,7 +49,7 @@ You can click the headers below to go directly to the specific chapters:
 1. Duplicates
 First select everything CTRL + A and remove duplicates
 
-![1 1](https://github.com/user-attachments/assets/b0f74b08-f69c-4931-9ed2-54d5026344cc)
+![1 1](Excel_screenshoots/1.1.png)
 
 2. Empty cells
 - Using "Find and replace" we search for cells to replace
