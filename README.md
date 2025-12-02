@@ -561,11 +561,11 @@ Another powerful analytical tool is what-if analysis, which offers three options
 
 Creating scenarios allows you to choose which cell to change and to what value. This allows you to easily switch between different options, and the remaining data updates automatically. As in this case, changing the number of interventions for Wonder Woman automatically changes the cost per intervention. However, I personally find it more practical to create a table that immediately displays the different scenarios. The scenarios pane also offers merge and summary options. Merge allows you to load scenarios from another spreadsheet or Excel file into the currently open spreadsheet, provided both use the same input cells. The Summary function, on the other hand, creates an automatic report comparing all scenarios.
 
-![A10_dwa](Excel_screenshoots/Advanced_ss/A10_dwa.png)
+![A10_dwa](Excel_screenshoots/Advanced_ss/A10.dwa.png)
 
 The second function is Goal Seek, which searches for the answer to the question of how much we need to change a given value to achieve the desired result. In this case, I want to check how much the total cost must change to reduce Wonder Woman's cost per day to 300,000. We select the cell we want to change, the value to which, and which cell to change. This is very useful because we quickly get an answer to something that would otherwise take a long time to find. In this case, I know that for the cost per day to be 300,000, the total cost must be 9,000,000. This is especially useful for more complex calculations.
 
-![A10_trzy](Excel_screenshoots/Advanced_ss/A10_trzy.png)
+![A10_trzy](Excel_screenshoots/Advanced_ss/A10.trzy.png)
 
 The third function, data table, is often referred to as array functions. It's very useful, allowing you to quickly see how changing one or two variables affects the result of a formula. It's useful, for example, when modelling scenarios involving costs, profits, loan instalments, and so on. It works a bit like a simulation matrix – you specify input values (e.g., various prices and quantities), and Excel automatically calculates the result based on them. In this case, I'm checking how the cost per intervention changes as the total cost and number of interventions change.
 
@@ -575,7 +575,7 @@ For table functions to work correctly, there must always be a reference point fo
 
 This can be a bit confusing, as you're selecting data from the old table for the new table, but after a few tries, everything becomes clear. It's important to remember that the cell that indicates the action, i.e., K42, or a link to it, should be in the upper left corner, above the rows whose results you want to predict. Ultimately, we obtain a set of combinations for each option regarding the number of interventions and the total cost. This allows us to quickly see that if the total cost is 7 million and there are 120 Wonder Woman interventions, the cost per intervention = 58,333, and if there are 150 interventions, the cost = 46,667.
 
-![A10_cztery](Excel_screenshoots/Advanced_ss/A10_cztery.png)
+![A10_cztery](Excel_screenshoots/Advanced_ss/A10.cztery.png)
 
 The next very powerful function I'd like to present is LAMBDA. Briefly speaking, it's used to store a function and its arguments on a single line. It works very similarly to Lambda in typical programming languages. The first character is always the value to be entered in the LAMBDA, followed by the second value or the operation itself. For example, this is what the squaring formula looks like. After the function is (5), meaning that 5 will be inserted instead of "x."
 
@@ -759,7 +759,7 @@ Finally, I'm adding a GIF showing the operation of all the macros I used in this
 
 
 
-
+[Table of Contents](#table-of-contents)
 
 
 
