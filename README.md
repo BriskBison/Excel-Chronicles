@@ -309,68 +309,68 @@ The margin shows the company what the best prices are and helps monitor the effi
 In this part, I’d like to show how to upload data using a CSV file so that a table is automatically created in Excel. The data I’m using represents a sales set made up of Marvel superheroes.
 We’ll use Data -> From CSV to do this
 
-<img width="1905" height="883" alt="1" src="https://github.com/user-attachments/assets/4f4c4627-6915-4859-9dc3-891e0331aa33" />  <br>
+![1](Excel_screenshoots/PowerQuery_ss/1.png)
 
 After loading the data, a window appears in which we can select the number of rows to display and the basis on which the CSV file was generated. Power Query itself perfectly detects whether the file is separated by commas, spaces, semicolons - but it sometimes happens that the data is separated by different characters or we need them to be separated in a specific way. In that case, we select "custom" from the bar
 
-<img width="1662" height="887" alt="2" src="https://github.com/user-attachments/assets/d3269c48-9369-42cf-87fd-524360f576c8" />  <br>
+![2](Excel_screenshoots/PowerQuery_ss/2.png)
 
 In the initial examples, I cleaned up the data from Excel using the search or "remove duplicates" functions. Power Query cleaning is also a good option, especially when using CSV files. To do this, select "transform data." If we don't need changes, select "Load". First, we should set the column titles. You'll notice they've been "pulled in." Power Query can handle this easily. To do this, select everything and choose "Use first rows as headers." Of course, we can reverse the order if necessary.
 
-<img width="1782" height="865" alt="3" src="https://github.com/user-attachments/assets/fe7ffc72-09f6-4113-9005-19c2a719f495" />  <br>
+![3](Excel_screenshoots/PowerQuery_ss/3.png)
 
 A useful feature is to mark in the "view" section what general information should be displayed at the top of the table. I recommend checking Column distribution and column quality, which will show us how many errors appear in the columns and how much data is unique.
 
-<img width="1682" height="767" alt="4" src="https://github.com/user-attachments/assets/0084b770-b949-42e7-abf2-7fda24c2b84d" />  <br>
+![4](Excel_screenshoots/PowerQuery_ss/4.png)
 
 Next, we can address the duplicates in the first name and last name columns. To do this, select the two columns, right-click, and select remove duplicates. As you can see, there's also the option to remove empty, errors, or replace errors, which I'll discuss later.
 
-<img width="1618" height="761" alt="5" src="https://github.com/user-attachments/assets/ccb01aec-7a4d-430d-9633-dd7dafd2f68a" />  <br>
+![5](Excel_screenshoots/PowerQuery_ss/5.png)
 
 After selecting remove duplicates, only one record was deleted – Arthur Curry – even though there were more duplicates. This is because only these records were spelled exactly the same. Power Query will detect a duplicate only if it is a 1:1 match, but the characters' names and surnames are in a different order. I suggest converting them to the same form. To do this, we also select the column, but it's important to right-click on the header, go to transform, and select capitalize each word.
 
 You can immediately see that there are many more useful functions here: trim = removes unnecessary spaces, lowercase/UPPERCASE = changes the case, clean = removes invisible non-printing characters, length = returns the length of each line, JSON / XML = changes to the data format.
 
-<img width="1667" height="787" alt="6" src="https://github.com/user-attachments/assets/cf6e542b-52de-4607-8106-af69a4e72c3b" />  <br>
+![6](Excel_screenshoots/PowerQuery_ss/6.png)
 
 After selecting capitalize each word, the data changed to the same size, after which we can successfully remove duplicates again. Next, we can add a column that will be a combination of the superhero's name and surname. We select add column -> custom column -> combine the text using the & " " & character and select "insert".
 
-<img width="1703" height="798" alt="7" src="https://github.com/user-attachments/assets/8e6b1be2-3518-42a8-bf97-9c0484ae8d82" />  <br>
+![7](Excel_screenshoots/PowerQuery_ss/7.png)
 
 The column was added correctly, but at the end of the table and with the name "custom." I intentionally left the name unchanged in the previous step to show the option to "rename" the column. I suggest "Full name." We can also move the column to the appropriate location, starting, ending, left, or right. We can also simply drag the columns with the mouse.
 
-<img width="1715" height="890" alt="8" src="https://github.com/user-attachments/assets/ae0f9bb8-4f18-42eb-84bf-f450ee9c34e7" />  <br>
+![8](Excel_screenshoots/PowerQuery_ss/8.png)
 
 Now we can remove the first and last name columns by selecting and using remove columns. If we select "remove other columns," the unselected columns will be removed. It's also worth mentioning a very useful Power Query feature: the "change history," which appears on the right. If we want to undo a move, just click the "X" next to the last action.
 
-<img width="1687" height="810" alt="9" src="https://github.com/user-attachments/assets/d92fe9fe-e95b-41f0-a42a-30308e006991" />  <br>
+![9](Excel_screenshoots/PowerQuery_ss/9.png)
 
 We can apply UPPERCASE operations to the "HERO" column to make the superheroes' names written in uppercase letters.
 
 In the sale_date column, you can see that one date is incorrectly written. Additionally, the column is being read as text, as seen at the top of the page. We should replace text with date from the drop-down list, but this will cause the date to be treated as an error and result in an "error." Therefore, if we see that the date is correct but misspelled, it's better to change it manually. Otherwise, if we were to use "remove error" on the entire column, we could lose data that was good and valuable, but incorrectly written. It's crucial that the dates are written exactly the same way, so in this case, 03.06.2025. Then, in the "text" field, select "date."
 
-<img width="1570" height="752" alt="10" src="https://github.com/user-attachments/assets/15b034a7-a590-4d37-bfea-847896705cff" />  <br>
+![10](Excel_screenshoots/PowerQuery_ss/10.png)
 
 A similar situation occurs with the sales value column. After changing it to "decimal number," an error occurred, even though the data is correct. This is because the number is stored using a period, not a comma. Therefore, we also need to undo the data type change. Replace the periods with commas, and then change the data type again. We can do this by simply entering a period in the value to find field and a comma in the "replace with" field. The same should be done with the space.
 
-<img width="1581" height="781" alt="11" src="https://github.com/user-attachments/assets/62c7dd0a-4125-4033-a2c0-cb6902f5e106" />  <br>
+![11](Excel_screenshoots/PowerQuery_ss/11.png)
 
 I also suggest setting column 12 to start with capital letters only. I also encourage adding a prefix before the names, which can make searching for data easier. This column contains the names of the cities where the heroes are stationed, so you can add REGION before each one. Select format -> add prefix and enter the value.
 
-<img width="1522" height="786" alt="12" src="https://github.com/user-attachments/assets/78a4e7ab-284d-40d6-9ab8-758e8e37bad4" />  <br>
+![12](Excel_screenshoots/PowerQuery_ss/12.png)
 
 Now I'd like to show you a very useful feature, especially for hiding personal data or any type of search: part of a name, part of a URL, or a specific location in the text. In other words, "Extract." We can easily obtain the text length, first/last letter, select a specific area using range (e.g., from 2 to 5 letters), and also the text before/between/after the delimeter. In this example, I'd like to hide the characters' surnames, leaving only their first names. So, I select "Text before delimeter" and simply enter a space in the box. Finally, I'll get just their first names.
 
-<img width="1527" height="792" alt="13" src="https://github.com/user-attachments/assets/9e1afd5a-722c-4171-9583-3f79bd824e1a" />  <br>
+![13](Excel_screenshoots/PowerQuery_ss/13.png)
 
 A file prepared this way in Power Query is much easier to work with. Furthermore, Power Query is much faster and more intuitive for ETL operations – Extract, Transform, Load. Once the file is ready, we can upload it to Excel using the "Close & Load" button.
 
-<img width="1812" height="885" alt="14" src="https://github.com/user-attachments/assets/e212b88b-b88d-4699-81ec-635f5b5ab72a" />  <br>
+![14](Excel_screenshoots/PowerQuery_ss/14.png)
 
 
 At the end, I'd like to introduce a Power Query feature called pivot/unpivot columns, which changes the layout of tabular data. This can be visualized as swapping columns and rows. This can be achieved by selecting the columns, right-clicking, and selecting "unpivot selected columns." As you can see in the attached image, "HERO" is used as a row and assigned a name. The same applies to the full name.
 
-<img width="1647" height="762" alt="19" src="https://github.com/user-attachments/assets/7eb38b02-9203-408d-94da-e394e020b353" />  <br>
+![19](Excel_screenshoots/PowerQuery_ss/19.png)
 
 
 
@@ -379,22 +379,22 @@ At the end, I'd like to introduce a Power Query feature called pivot/unpivot col
 
 CSV data is uploaded to Excel as a table, which is often very convenient because the most frequently used functions are automatically built in. Clicking on the table will display the Table Design icon above the toolbar. It offers additional table functions and the ability to change the style. The "total row" function is very useful, creating a row below the table with totals. Furthermore, after selecting the drop-down column, you can choose whether to obtain the sum, average, maximum, etc. In cell C7, I selected the minimum value to indicate the lowest date.
 
-<img width="1271" height="678" alt="15" src="https://github.com/user-attachments/assets/fb62bcaa-0768-4433-a522-10e15a3152ca" />  <br>
+![15](Excel_screenshoots/PowerQuery_ss/15.png)
 
 
 It's worth remembering that data can also be downloaded directly from a website; Excel should be able to figure out what constitutes a table on a given page and read the data. Select Data -> from WEB -> and then simply paste the address of the website from which you want to download the data.
 
-<img width="1492" height="847" alt="16" src="https://github.com/user-attachments/assets/c1bc81dc-12dd-45cd-b931-574be5b1d2bd" />  <br>
+![16](Excel_screenshoots/PowerQuery_ss/16.png)
 
 
 In this situation, Power Query will reopen, along with all the text that can be treated as a table. It's important to select "Select multiple items" and select all the tables you need. Then click Load.
 
-<img width="1673" height="897" alt="17" src="https://github.com/user-attachments/assets/8ede2c74-5e10-4982-8efb-56c31b385ee8" />  <br>
+![17](Excel_screenshoots/PowerQuery_ss/17.png)
 
 
 Once the data is loaded, right-click and choose where you want to place it. Select "Table" and the appropriate cell. Double-clicking on the table will open Power Query, where you can clean up the data. If you close this column, you can reopen it in Data -> Queries & Connections.
 
-<img width="1907" height="928" alt="18" src="https://github.com/user-attachments/assets/262f0d25-7cb4-4df2-b4be-3105ee8b67f7" />  <br>
+![18](Excel_screenshoots/PowerQuery_ss/18.png)
 
 
 The problem with uploading these types of columns is that they are difficult to combine. The tables are separate, so even if we paste them one below the other, the filters won't capture those that fall outside their range. You would have to copy all the values and then paste them into a new cell. There are several ways to work around this problem, but with large data sets, selecting data validation and using the drop-down list is a very quick way to do this. To do this, we need to "extract the names and surnames" of the directors using the function.
@@ -409,17 +409,17 @@ In column B36 we use the usual =COUNTIF(C12:C31; A36)
 
 Because of this, depending on which director we choose from the list, his number of films is updated.
 
-<img width="1893" height="917" alt="20" src="https://github.com/user-attachments/assets/69fb785d-ac7e-4cc9-b4ba-660e33bd1c75" />  <br>
+![20](Excel_screenshoots/PowerQuery_ss/20.png)
 
 
 It's also worth knowing about the password protection feature, which can be found in Format -> Protect Sheet. After selecting the elements you want to password-protect, enter the password, thus allowing others to make unwanted changes.
 
-<img width="1871" height="918" alt="21" src="https://github.com/user-attachments/assets/67692063-b669-4716-b744-d49c83ba3f80" />  <br>
+![21](Excel_screenshoots/PowerQuery_ss/21.png)
 
 
 A very useful, yet underappreciated, feature of Excel is the lightning-fast creation of graphs, hierarchies, cycles, and so on. There are many programs online that can help with this, but in my opinion, Excel is the best because it automatically creates a template, which saves a lot of time because you don't have to make connections manually, and if you need more, it's very easy to edit. I also believe that writing a process this way is the easiest and most reflects a deep understanding of the subject when you can demonstrate what results from what and what influences what. This format is also very good for memory, as you have a view of the entire process, its before and after stages, allowing your mind to better encode information.
 
-<img width="1861" height="904" alt="22" src="https://github.com/user-attachments/assets/ad7e3a8e-1773-4abf-8217-1bd1e9332ffe" />  <br>
+![22](Excel_screenshoots/PowerQuery_ss/22.png)
 
 
 
