@@ -430,26 +430,26 @@ In this chapter, I've compiled a list of superheroes, with columns for the inter
 
 I'm presenting data from June 2025. To take a closer look at the financial results, it's a good idea to start with the sum of total costs. Therefore, in row 2, I'll create a table summarizing each hero's launches throughout June.
 
-<img width="1266" height="848" alt="A1" src="https://github.com/user-attachments/assets/0c1e8bdf-4d87-4152-85cf-f9f04f9f02b2" />  <br>
+![A1](Excel_screenshoots/Advanced_ss/A1.png)
 
 
 Many calculations in data analysis use "per something" coefficients: per day, per person, per mile, etc. Therefore, we will now try to check the cost of one intervention (in this case, what are the losses) per superhero. To do this, we first need to count all interventions for each character. We will use the classic sumif = SUMIF(A12:A155; "Batman"; B12:B155) and, of course, change the search word for each hero. If we wanted to drag the formula through the cells, we would need to add absolute referencing to "freeze the cells," which would be =SUMIF($A$12:$A$155; "Batman"; $B$12:$B$155).
 
-<img width="1772" height="970" alt="A2" src="https://github.com/user-attachments/assets/e5309014-3080-4ead-a8c8-72b63e486c6e" />  <br>
+![A2](Excel_screenshoots/Advanced_ss/A2.png)
 
 
 Now we can easily see that Batman had by far the most interventions. We can now easily calculate the cost per day and per intervention by simply dividing the total cost by the number of days (in this case, 30), and in the second case, by the number of interventions in columns C3:C8. Now we can add absolute referencing to "freeze cells" = $B3/$C3, thus conveniently passing the function through all heroes. In this case, there's no dollar sign before the number "3" because we want the function to loop through each cell and update to its number.
 
 I also added cells with calculated total cost and intervention numbers, and the results are alarming. However, it's clear that Batman leads in every respect. He has almost the lowest total damage, the highest number of interventions, the lowest cost per intervention, and almost the lowest daily cost. Wolverine is ahead of him in terms of cost per day and total losses, but he has the fewest interventions and the highest cost per intervention. It's clear that Batman knows what he's doing. Superman, who has almost the same number of interventions, has a roughly 20% higher cost per day.
 
-<img width="1052" height="936" alt="A3_trzy" src="https://github.com/user-attachments/assets/2aac611b-3741-48e9-b371-2add4e8f189d" />  <br>
+![A3_trzy](Excel_screenshoots/Advanced_ss/A3_trzy.png)
 
 
 It's worth changing the colors of row headers. You can do this not only with the mouse but also with keyboard shortcuts. When you select a range, press ALT = and the letters assigned to individual Excel elements will appear. Simply select the letters to access specific functions using the keyboard shortcuts.
 
 For example, for changing the color it will be Alt + H + H. For "wrap text" it will be Alt + H + W. For "Data Validation" it will be Alt + A + V etc.
 
-<img width="1123" height="867" alt="A4" src="https://github.com/user-attachments/assets/5d6a64ae-8f92-4c1e-94e0-9e51532647dc" />  <br>
+![A4](Excel_screenshoots/Advanced_ss/A4.png)
 
 
 Now we can try to calculate Batman's projected damage output over the next 10 days. We'll use the FORECAST.LINEAR() function, which is a linear forecast based on historical data. Excel also offers other possible forecasts, based on seasonality, prioritizing the most recent data, and including multiple variables. Let's first try using LINEAR, which assumes the data grows linearly. The full function looks like this:
@@ -468,7 +468,7 @@ This can be easily verified by subtracting the next two days. I performed this o
 
 To add trendlines to a chart, select Chart Design -> Trendline -> Linear Trendline. To display the function, select More Trendline Formats -> Format Trendline and select "Display Equation on Chart."
 
-<img width="1880" height="912" alt="A5" src="https://github.com/user-attachments/assets/ddd2c0d1-fa73-45fd-9181-f1baddd46415" />  <br>
+![A5](Excel_screenshoots/Advanced_ss/A5.png)
 
 
 To further confirm that FORECAST.LINEAR isn't the best method in this case, because expenses don't grow linearly, we can use a sum function, which will count expenses broken down by the appropriate intervals. In this case, I've assumed the function would count three rows and then move on to the next three. We can achieve this by combining the SUM + OFFSET + ROW functions.
@@ -487,7 +487,7 @@ It's also worth calculating kurtosis, a statistical measure that describes the "
 
 Finally, it's worth calculating the standard deviation to assess how widely the data is dispersed around the mean. In Excel, we can use the STDEV.P (entire population) or STDEV.S (sample) functions. Since we're analyzing data from an entire month, we assume we're dealing with a population—so we use STDEV.P. The result is 294,245, meaning that the average deviation of values from the mean (459,934) is this much. Intuitively, we can assume that most values (about 68%) fall within the range: 459,934 +/- 294,245 → i.e., from 165,689 to 754,179. Of course, there can also be values much further from the mean—especially if the data are not normally distributed.
 
-<img width="1846" height="902" alt="A6" src="https://github.com/user-attachments/assets/240df93d-97be-44fa-99b2-09adc48e05f3" />  <br>
+![A6](Excel_screenshoots/Advanced_ss/A6.png)
 
 
 Another very useful measure in statistics is SKEW, or skewness. As with standard deviation, we have options for sample skew and total skew. Since our data covers a full month, we can confidently choose SKEW.P. In this case, the SKEW value is 0.026971, very close to zero. This means there is no significant skew to the right or left; the distribution is nearly symmetrical.
@@ -502,7 +502,7 @@ The last metric I'd like to present is correlation. This is a very useful metric
 
 The correlation is 0.19, meaning the relationship between the cost of losses and the number of interventions is quite small. In this case, we can't assume that the more interventions Batman has, the higher the cost of damage. We could already assume this from the first table, using the example of Wolverine, who had almost 50% fewer interventions compared to Batman, yet his damage costs were very similar to Batman's. However, in data analysis, as in business, it's always worth confirming any assumptions with numbers :)
 
-<img width="1897" height="928" alt="A7" src="https://github.com/user-attachments/assets/80375961-4478-4f57-a7c4-a5ec9e5ecc9a" />  <br>
+![A7](Excel_screenshoots/Advanced_ss/A7.png)
 
 
 
@@ -514,7 +514,7 @@ This way, we could create a hypothesis that if someone works with Wonder Woman a
 
 CFD allows for pinpointing the largest losses. Of course, there are many ways to do this, but this is most useful when we don't know a single result and the data is constantly arriving in streams. In that case, the function can add everything up and determine the percentage on the fly. Of course, you can also manually calculate the MAX value and determine the result that would meet the minimum threshold. 90% MAX. However, this would require us to check it periodically and would be more prone to errors.
 
-<img width="1842" height="873" alt="A8" src="https://github.com/user-attachments/assets/e5a79530-75a2-43fa-85f9-7cd4fb585ded" />  <br>
+![A8](Excel_screenshoots/Advanced_ss/A8.png)
 
 
 In the table I created in cells A3:E10, we've more or less concluded how Batman outperforms everyone else, and how Wolverine is performing poorly. However, as I mentioned, it's worth checking everything with numbers when analyzing data. To ensure these results aren't random, I'll use T.TEST, a statistical sampling test that checks to which the values could have been random. This will allow us to determine whether Batman is actually that good and Wolverine needs some training, or whether it's just a matter of extreme luck.
@@ -543,14 +543,14 @@ F crit = This is literally the threshold value that must be exceeded to conclude
 
 Now, two methods confirm that the destruction results are rather random and no hero can be directly blamed, especially based on only one month.
 
-<img width="1905" height="992" alt="A9" src="https://github.com/user-attachments/assets/a58a1244-0561-40b3-b750-1e10271c0241" />  <br>
+![A9](Excel_screenshoots/Advanced_ss/A9.png)
 
 
 The next tool I'd like to present is the Forecast Sheet, an automatically generated forecast by Excel. To create one, select the dates and the number you want to forecast. In this case, this will obviously be the Damage value. I select the area -> Select Data -> Forecast Sheet. Then, we determine how far out we want the forecast to be. Confidence Interval = This is the forecast's certainty (confidence interval) and determines how much we can trust the forecasted values. By default, Excel sets 95%, meaning that with 95% certainty, the forecasted value will fall within the calculated range (the so-called uncertainty band). If we set the value to 30%, the orange lines would simply be closer to the centre.
 
 Seasonality, When we have a lot of data—as in this case, over 20 days—it's best to leave the seasonality to be automatically adjusted. However, if we have fewer dates, or we're certain of a cycle, for example, every 7 days or every 6 months, simply select that number as the seasonality. Missing points and duplicates are best left as they are automatically adjusted. Once you're done, click create. This is a very useful tool that can quickly provide at least a point of reference for forecasting results, thus facilitating further steps.
 
-<img width="1887" height="1055" alt="A10" src="https://github.com/user-attachments/assets/2b1ca21e-9d03-440b-bd12-c00b0773ac8d" />  <br>
+![A10](Excel_screenshoots/Advanced_ss/A10.png)
 
 
 
@@ -561,11 +561,11 @@ Another powerful analytical tool is what-if analysis, which offers three options
 
 Creating scenarios allows you to choose which cell to change and to what value. This allows you to easily switch between different options, and the remaining data updates automatically. As in this case, changing the number of interventions for Wonder Woman automatically changes the cost per intervention. However, I personally find it more practical to create a table that immediately displays the different scenarios. The scenarios pane also offers merge and summary options. Merge allows you to load scenarios from another spreadsheet or Excel file into the currently open spreadsheet, provided both use the same input cells. The Summary function, on the other hand, creates an automatic report comparing all scenarios.
 
-<img width="1910" height="923" alt="A10 dwa" src="https://github.com/user-attachments/assets/ef158f50-6e2b-45ea-83de-0bf3e8bfc7c1" />  <br>
+![A10_dwa](Excel_screenshoots/Advanced_ss/A10_dwa.png)
 
 The second function is Goal Seek, which searches for the answer to the question of how much we need to change a given value to achieve the desired result. In this case, I want to check how much the total cost must change to reduce Wonder Woman's cost per day to 300,000. We select the cell we want to change, the value to which, and which cell to change. This is very useful because we quickly get an answer to something that would otherwise take a long time to find. In this case, I know that for the cost per day to be 300,000, the total cost must be 9,000,000. This is especially useful for more complex calculations.
 
-<img width="1876" height="880" alt="A10 trzy" src="https://github.com/user-attachments/assets/15c6262d-9894-4436-9499-0f663828f56a" />  <br>
+![A10_trzy](Excel_screenshoots/Advanced_ss/A10_trzy.png)
 
 The third function, data table, is often referred to as array functions. It's very useful, allowing you to quickly see how changing one or two variables affects the result of a formula. It's useful, for example, when modelling scenarios involving costs, profits, loan instalments, and so on. It works a bit like a simulation matrix – you specify input values (e.g., various prices and quantities), and Excel automatically calculates the result based on them. In this case, I'm checking how the cost per intervention changes as the total cost and number of interventions change.
 
@@ -575,7 +575,7 @@ For table functions to work correctly, there must always be a reference point fo
 
 This can be a bit confusing, as you're selecting data from the old table for the new table, but after a few tries, everything becomes clear. It's important to remember that the cell that indicates the action, i.e., K42, or a link to it, should be in the upper left corner, above the rows whose results you want to predict. Ultimately, we obtain a set of combinations for each option regarding the number of interventions and the total cost. This allows us to quickly see that if the total cost is 7 million and there are 120 Wonder Woman interventions, the cost per intervention = 58,333, and if there are 150 interventions, the cost = 46,667.
 
-<img width="1867" height="896" alt="A10 cztery" src="https://github.com/user-attachments/assets/c5381050-ce6b-4280-ae9b-83ffc550bfbb" />  <br>
+![A10_cztery](Excel_screenshoots/Advanced_ss/A10_cztery.png)
 
 The next very powerful function I'd like to present is LAMBDA. Briefly speaking, it's used to store a function and its arguments on a single line. It works very similarly to Lambda in typical programming languages. The first character is always the value to be entered in the LAMBDA, followed by the second value or the operation itself. For example, this is what the squaring formula looks like. After the function is (5), meaning that 5 will be inserted instead of "x."
 
@@ -601,7 +601,7 @@ The initial value is given as 0, then the array, i.e., the range E15:E142, and t
 
     =REDUCE(1; C4:C9; LAMBDA(a;b; a + IF(b > 90; b; 1)))
 
-<img width="952" height="398" alt="A11" src="https://github.com/user-attachments/assets/3cfd84b6-c57f-49b2-9d5e-da88811d3fb6" />  <br>
+![A11](Excel_screenshoots/Advanced_ss/A11.png)
 
 LAMBDA SCAN works very similarly, returning consecutive results. In this case, I subtract the numbers contained in the array from the hypothetical number of Wonder Woman's interventions. This gives us the results.
 
@@ -617,7 +617,7 @@ BYCOLUMN works similarly, iterating over columns, allowing us to easily perform 
 
 Another function often combined with LAMBDA is MAKEARRAY, which creates an array. It's also worth noting that LAMBDA's greatest advantage is storing calculation data in memory for easy reuse. It's a mini version of macros and VBA, which can make life significantly easier. Unfortunately, LAMBDA in Excel can't handle very large numbers; in such cases, it will return the error message shown below.
 
-<img width="1273" height="505" alt="A12" src="https://github.com/user-attachments/assets/b6b71381-6f26-479f-a85d-56df5f8da861" />  <br>
+![A12](Excel_screenshoots/Advanced_ss/A12.png)
 
 However, it works very well for simple tasks that take much longer than they should, and are very easy to automate. In this example, we'll try to assign the next superheroes to accompany Wonder Woman in advance. To add your own function, go to Formulas -> Name Manager -> select New. You'll be given the option to create a new function. Enter the name you want the function to be called, in my case, "hero." Replace "refers to =" with its code. It's best to write it elsewhere and copy it. LET assigns variables to rows and columns, defining the "dimensions" of our array. MAKEARRAY = creates an array with predefined dimensions. Each cell is calculated using the LAMBDA(r; c; ...) function, where r is the row index and c is the column index.
 
@@ -640,7 +640,7 @@ A rather complex formula in MOD, it's easier to break it down into pieces. The g
 
 As mentioned in previous chapters, MOD returns the remainder of dividing a number by the divisor. MOD(...; 5) causes values to cycle through from 0 to 4, regardless of the cell number. The +1 function is used to return values from 1 to 5, which is the number of heroes in CHOOSE =. This function selects heroes in this order: 1 = Batman, 2 = Superman, etc. The biggest advantage of this solution is that you can then simply enter =function_name(hero) and Excel will do the rest for you.
 
-<img width="1882" height="843" alt="A13" src="https://github.com/user-attachments/assets/4110f9b6-1f15-4e6e-a6a6-869c833b7698" />  <br>
+![A13](Excel_screenshoots/Advanced_ss/A13.png)
 
 We can also use the LET function to enter a range we consider appropriate, for example, to select only Batman and Superman from the cells we specify (A4:A5). This allows us to easily control which range we want to use at a given time. For this purpose, we use the LET function, which automatically adjusts RANDBETWEEN to the specified range. First, LET determines the range using ROWS(range). So, if the range is A4:A5 in my case, then number = 2. Then, we use MAKEARRAY with constant values, which we know from the previous example. RANDBETWEEN randomly selects a number from 1 to number -> the number previously specified in range. In my case, it's 2 (Batman and Superman). Finally, INDEX retrieves the number from range that was randomly selected in RANDBETWEEN. I named the function heroran = hero + random.
 
@@ -655,7 +655,7 @@ We can also use the LET function to enter a range we consider appropriate, for e
 
 The biggest drawback of this solution is that after each operation in Excel -> RANDBETWEEN will be automatically reused and return new values. There are ways around this, for example, adding a cell that must contain a specific value to perform the randomization. However, this would be a very complex function, and in this situation, using a macro—code written in VBA—is much more useful. I'll present the details of this in the next and final chapter.
 
-<img width="1890" height="847" alt="A14" src="https://github.com/user-attachments/assets/9f760014-35a7-4c4e-912a-49cbb78b8d7c" />  <br>
+![A14](Excel_screenshoots/Advanced_ss/A14.png)
 
 
 [Table of Contents](#table-of-contents)
@@ -665,31 +665,31 @@ Let me start with a brief explanation of what macros are in Excel: they're nothi
 
 I created a file with sample data from a music store's weekly sales. Column A contains the days of sales, column B the number of orders, and column C the amounts. As you can see, much of this data is misspelled: one date is a number, some order numbers contain spaces, and the same is true for order amounts. The headers also need to be improved. These are not complicated changes, but we can use macros to "fix" everything with one click.
 
-<img width="376" height="503" alt="V1" src="https://github.com/user-attachments/assets/fbf809df-6ae0-49a3-ab23-729e928cadff" />  <br>
+![V1](Excel_screenshoots/VBA_ss/V1.png)
 
 The most important thing when recording macros is to prepare the spreadsheet so that you don't make any unnecessary movements. The recording will record every click and every change, so it's important to have everything ready. Therefore, I recommend selecting cell A1. Once you're ready, select the Developer -> Record Macro tab. A macro recording window will appear. You can choose any name and shortcut. I recommend not overwriting commonly used shortcuts like Ctrl + C or Ctrl + A, but rather using Shift. In this case, I use Ctrl + Shift + E. You can also skip any shortcut and select the macro in the future by clicking "Macros." The last thing we need to choose is where the macro will be saved: in this sheet, "in all Excel," or in a new sheet. I think it's best to save macros that are universal, so I choose "all Excel."
 
-<img width="971" height="829" alt="V2" src="https://github.com/user-attachments/assets/414bc27c-0e30-4103-b7af-32647cff5e57" />  <br>
+![V2](Excel_screenshoots/VBA_ss/V2.png)
 
 We can correct and bold the headings. We can change column A to make all values date-based, change column B to general numbers, and column C to decimal numbers with two decimal places. We'll also add four rows above, which are typically used for sheet titles, data analysis periods, etc. All the macros I'll create now (I'll show them in a GIF at the end) run one after the other. After completing the steps, I noticed that some of the data was incorrectly recorded. In cell B4, a dot is used instead of a comma, so the number didn't change, and in C6, the comma was placed in the wrong place—I can only guess, since the number of orders is 5 and sales is $1.67. It's probably impossible. This is a good example because it demonstrates the importance of double-checking in data analysis and how sometimes full automation can be detrimental, as we might miss an error. I can't apply the comma change to all the numbers, as it could distort the others—so I have to correct the data manually here.
 
-<img width="581" height="512" alt="V2_plus" src="https://github.com/user-attachments/assets/64921a7d-197f-4f2d-806e-5c0c94163133" />  <br>
+![V2_plus](Excel_screenshoots/VBA_ss/V2_plus.png)
 
 In Excel, pressing Alt + F11 will open the VBA editor. To find the code that was saved while recording the previous macro, find the folder where you saved it – for example, Personal. Then, right-click on the module -> view code. A window with the VBA code will appear. It will record all the clicks and actions performed from the beginning to the end of the recording. In my case, the code looks like this, showing the functions I created one by one. I selected the range (range selection), then bolded the font, then selected column A, then changed the format to "m/d/yyyy," then selected column B, changed various formats, and finally settled on "0," etc. The assigned shortcut to the code is visible at the top. The whole thing is quite messy because, although I tried to make as few clicks as possible, Excel recorded everything. Writing code from scratch in VBA is considered preferable because it's clearer and easier to make changes. But I will write about this in the next chapter.
 
-<img width="1510" height="802" alt="V3" src="https://github.com/user-attachments/assets/cb6cb41f-e056-428b-bfee-28a5910cea11" />  <br>
+![V3](Excel_screenshoots/VBA_ss/V3.png)
 
 The next macro I'll record will add a header for the entire sheet in column A1, with the Amount total in the cell below it, the Amount average next to it, and the number of orders in cell C1. Theoretically, we could do all of this in a single macro, but I recommend breaking it down into smaller steps, as it's easier to use the macro we need in a given situation. If we need all of them, we'll use three keyboard shortcuts for each, which takes seconds. I'll also add an action to capitalize all letters (UPPER) and remove unnecessary spaces throughout the sheet (TRIM). I'll also add a Find and Replace function to find and replace periods with commas in column B.
 
-<img width="702" height="626" alt="V4" src="https://github.com/user-attachments/assets/0a29c2fe-09e3-4f52-877a-7a766db6cc51" />  <br>
+![V4](Excel_screenshoots/VBA_ss/V4.png)
 
 This time, the macro I recorded had a lot of functionality. Each time I used TRIM, I had to enter the formula in a different cell, enter the range, then paste it into a specific location, like column B, and finally convert it back to numbers. That's why the code is so long.
 
-<img width="1423" height="705" alt="V5" src="https://github.com/user-attachments/assets/90a59e08-bf1b-4d09-b11f-af2cf232f58b" />  <br>
+![V5](Excel_screenshoots/VBA_ss/V5.png)
 
 The last macro I'll record will create a sales chart by day, a chart of order counts, zoom and center the "Orders Report" title, and add a MIN/MAX Amount. As you can see, macros can make work much easier; we've made quite a few improvements in just a few seconds. The biggest drawback of recorded macros is that they only work on a specific range. Therefore, if the data becomes longer, the columns are set differently, or if we import data into Excel starting from A2 instead of A1, the entire operation will be invalid. Therefore, this type of macro is best used when we're sure the data we receive is always in the same format, or only for visual purposes. Not everything can be done with this type of recorded macro; for more complex tasks, code written in VBA will be required.
 
-<img width="1852" height="857" alt="V6" src="https://github.com/user-attachments/assets/6145d629-7403-40f5-a494-003d34a105dc" />  <br>
+![V6](Excel_screenshoots/VBA_ss/V6.png)
 
 When it comes to macros written in VBA, we're truly limited only by our imagination and needs. Writing the code ourselves allows us to completely customize Excel's behavior. This feature is less frequently used these days, but macros can still speed up and simplify work. Paradoxically, macros are often used by people who lack Excel knowledge – someone else prepares the macros and then simply writes down "if you want to achieve this and that, select this and that and press a specific combination."
 
@@ -718,7 +718,7 @@ Then comes the meat of the code: the If…Then… code iterates through each cel
 
 This is a very useful macro because it works on a range that we select ourselves, so we can select 3 cells and choose values from them, or we can select 50 and it will work the same way.
 
-<img width="1597" height="832" alt="V7" src="https://github.com/user-attachments/assets/a7471402-d3d0-4568-9962-d686b780ec7c" />  <br>
+![V7](Excel_screenshoots/VBA_ss/V7.png)
 
 When creating a macro with VBA code, we can't specify the shortcut at the beginning. We can do this later, from Excel Developer -> Macros -> Options or (Alt + F8) and make changes. The next action I'd like to present is something very useful for a full report: a forecast for the next 5 days. However, I'll break it down into two macros. The first macro adds 5 days to the date of the last row after the one selected. The code is presented below. The beginning is the same as in the macros we've already seen. First, we define variables -> Dim and use an if loop if a range hasn't been selected. Set rng = Selection assigns a value to the selected range. Then, using Set lastCell = rng.Cells(rng.Cells.Count), we count the cells from top to bottom and determine which is the last one (Cells.Count). Next, there's the If IsDate(lastCell.Value) Then cell, which checks whether the last cell (lastCell) contains a valid date.
 
@@ -731,7 +731,7 @@ Finally, the for loop goes through the entire process 5 times and adds 5 dates.
           lastCell.Offset(i, 0).Value = lastDate + i
       Next i
 
-<img width="1440" height="582" alt="V8" src="https://github.com/user-attachments/assets/3323c97c-3f27-475c-adc6-d6c57ea3aa79" />  <br>
+![V8](Excel_screenshoots/VBA_ss/V8.png)
 
 The last macro I'd like to add is a FORECAST.ETS forecast macro. In this case, we can also select the area in which we want to make the forecast. The beginning of the code is almost identical to the previous examples – the function name, variable descriptions, and then targetcol = 3, which simply designates the column in which the forecast results should appear. The IF condition, as in the previous example, checks whether the cell contains a date.
 
@@ -748,13 +748,13 @@ This is the heart of this macro, where the most important thing is to specify ho
 
 The code Cells(targetRow, targetCol) only indicates which cell the FORECAST.ETS function should be used from. That's why there's the letter A (column A) and immediately after it "TargetRow," giving us A14, A15, A16, etc.
 
-<img width="1410" height="720" alt="V9" src="https://github.com/user-attachments/assets/00646551-1a8b-40ef-a1f0-15efd3f7acaf" />  <br>
+![V9](Excel_screenshoots/VBA_ss/V9.png)
 
 That was the last macro and the last function I wanted to present. Together, we'll take you on a long journey through Excel's key features. I hope you learned a lot and discovered new ways to streamline your work. Despite the development of many programs, Excel remains a great tool for various tasks. I hope the knowledge I've shared will be useful not only in your work but also in life :)
 
 Finally, I'm adding a GIF showing the operation of all the macros I used in this chapter – from the initial data to the final forecast. All the best and good luck! :)
 
-![MACROS_GIF (1)](https://github.com/user-attachments/assets/30f96c38-214a-4f11-93f2-b3e4c40bc088)
+![MACROS_GIF (1)](Excel_screenshoots/VBA_ss/MACROS_GIF(1).gif)
 
 
 
