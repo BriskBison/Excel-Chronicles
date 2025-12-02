@@ -754,7 +754,7 @@ That was the last macro and the last function I wanted to present. Together, we'
 
 Finally, I'm adding a GIF showing the operation of all the macros I used in this chapter – from the initial data to the final forecast. All the best and good luck! :)
 
-![MACROS_GIF (1)](Excel_screenshoots/VBA_ss/MACROS_GIF(1).gif)
+![MACROS_GIF (1)](Excel_screenshoots/VBA_ss/MACROS_GIF.gif)
 
 
 
